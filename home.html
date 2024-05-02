@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--google font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+  <!-- font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <title>Home</title>
+   <!--CSS styles-->
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+  <style>
+    
+    
+      .content-img{
+     min-height: 100vh;
+     width: 100%;
+     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(0,0,0,0)), url("./images/da.jpg");
+     background-position: center;
+     background-size: cover;
+     position: relative;
+     background-attachment: fixed;
+ }
+      
+ .content-img header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 15%;
+   padding-bottom: 10px;
+ }
+
+  </style>
+
+</head>
+<body>
+     <section class="content-img">
+     <header style="background: #9ba38f;">
+      <nav>
+        <a href=""> <img src="./images/li.png"></a>
+        <div class="links" id="navlinks">
+          <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">Courses</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+
+        </div>
+        <i class="fa fa-bars"  onclick="showMenu()" aria-hidden="true"></i>
+      </nav>
+     </header>
+      <div class="text">
+        <h1>Discover the Power of Learning and Unlock Endless Possibilities!</h1>
+        <a href="#web"><button>Educational Levels</button></a>
+      </div>
+     </section>
+
+
+
+
+
+     <!--Courses-->
+     <section style="background: rgb(153, 152, 152);" class="Courses">
+      <h1 style="padding-top: 20px;"  id="web">ABOUT OUR COURSES</h1>
+      <p>We divided the Courses in this three levels.</p>
+      
+      <div class="cards">
+
+        <div class="card" >
+          
+          <h2>Beginner</h2>
+          <p>The beginner level of this training program is designed for individuals
+             who are new to the field and want to learn the fundamental principles and
+              concepts. In this course, participants will become familiar with basic concepts
+               and necessary tools. The goal of this course is to establish a strong foundation f
+               or students to progress to higher levels.
+          </p>
+        </div>
+
+        <div class="card">
+    
+          <h2>Intermediate</h2>
+          <p>The intermediate level is suitable for individuals who have grasped the fundamental 
+            basics and want to expand their knowledge and skills. In this course, participants will
+             become acquainted with more advanced concepts and practical methods. The institute aims 
+             to familiarize students with more advanced issues and challenges in this course and prepare 
+             them for entry into the higher-level course.
+          </p>
+        </div>
+
+        <div class="card">
+        
+          <h2>Advance</h2>
+          <p>The advanced level is intended for individuals with a strong background 
+            in the relevant field who want to elevate their expertise and ability to 
+            a higher level and work in-depth on the subject matter. In this course, 
+            participants will become familiar with advanced concepts and cutting-edge 
+            innovations. The goal of this course is to develop and enhance the knowledge and skills
+             of students in the specific area and prepare them for complete mastery of complex topics.</p>
+        </div>
+
+      </div>
+
+     </section>
+
+     
+
+
+   
+      <!--footer-->
+     <section class="footer">
+      <footer style="background: #9ba38f; margin-top: 0;" >
+
+        <div class="footer-content">
+          
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="registration.html">Registeration</a></li>
+          </ul>
+          <div class="login">
+            <p style="color: black; text-align: left;">Join Us</p>
+            <div class="icon">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </div>
+          </div>
+        
+        </div>
+      </footer>
+
+      
+
+     </section>
+
+
+
+
+
+
+
+
+
+     <!--Java Script-->
+     <script>
+      var navlinks =document.getElementById("navlinks");
+
+      function showMenu(){
+        navlinks.style.right = "0";
+
+      }
+      function hideMenu(){
+        navlinks.style.right = "-200px";
+        
+      }
+
+      window.onload = handleResponsiveDesign;
+      window.onresize = handleResponsiveDesign;
+      </script>
+
+     
+
+
+
+</body>
+</html>

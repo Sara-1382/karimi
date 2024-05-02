@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--google font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+     <!-- font awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+     <title>Registeration</title>
+      <!--CSS styles-->
+     <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<style>
+  .categorey{
+    min-height: 100vh;
+     width: 100%;
+     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(0,0,0,0)), url("./aw.jpg");
+     background-position: center;
+     background-size: cover;
+     position: relative;
+     background-attachment: fixed;
+  }
+  .content-img .eader{
+   
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 0%;
+   padding-bottom: 0px;
+   background-color: rgba(152, 147, 147, 0.593);
+ }
+
+
+
+ </style>
+
+<body>
+     <section class="content-img">
+         <header class="eader">
+          <nav>
+               <a href=""> <img src="./li.png"></a>
+   
+              
+               
+               <div class="links" id="navlinks">
+                 <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+                 <ul>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="about.html">Courses</a></li>
+                  <li><a href="registration.html">Registration</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                 </ul>
+       
+               </div>
+               
+               <i class="fa fa-bars"  onclick="showMenu()" aria-hidden="true"></i>
+             </nav>
+         </header>
+        
+
+ </section> 
+ 
+ <section  class="categorey">
+ <h1>Our Categorey</h1>
+  <div class="row">
+       
+    <div class="categorey-col">
+      <img src="./ph1.png">
+      <div class="layer">
+       <h1 style="text-decoration-color: #6e7b7b;">Photoshop</h1>
+       <p> Adobe Photoshop is a raster graphics editor developed 
+            and published by Adobe Inc. for Windows and macOS. 
+            It was originally created in 1987 by Thomas and John 
+            Knoll. Since then, the software has become the most 
+            used tool for professional digital art, especially in 
+            raster graphics editing. </p>
+       </div>
+  </div>
+        
+
+    <div class="categorey-col">
+      <img src="./in1.png">
+      <div class="layer">
+       <h1 style="text-decoration-color: #6e7b7b;">Indesin</h1>
+      <p>Adobe InDesign is a professional desktop publishing software
+         application developed by Adobe Inc. It is commonly used by graphic
+          designers, artists, and publishers to create and publish various 
+          types of documents such as brochures, magazines, books, posters, and 
+          interactive PDFs. InDesign provides a comprehensive set of tools and features
+           for layout design, typesetting, image editing, and graphics manipulation.</p>
+      </div>
+      
+
+    </div>
+
+    <div class="categorey-col">
+      <img src="./il1.png">
+      <div class="layer">
+       <h1 style="text-decoration-color: #6e7b7b;">Illustrator</h1>
+      <p>Adobe Illustrator is a professional vector graphics editing software developed
+         by Adobe Inc. It is widely used by graphic designers, artists, and illustrators 
+         to create and edit scalable vector artwork for various purposes such as print, web,
+          multimedia, and mobile devices. Illustrator is known for its powerful tools and features 
+          that enable users to create precise and visually appealing illustrations, logos, icons, typography,
+           and complex artwork.</p>
+      </div>
+      
+
+    </div>
+  
+  </div>
+
+</section>
+
+ <!--footer-->
+<section class="footer">
+  <footer style="background:rgba(152, 147, 147, 0.593); margin-top: 0;">
+
+    <div class="footer-content">
+      
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="registration.html">Registeration</a></li>
+      </ul>
+      <div class="login">
+        <p style="color: black; text-align: left;">Join Us</p>
+        <div class="icon">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+    </div>
+      </div>
+    
+    </div>
+  </footer>
+
+  
+
+ </section>
+
+
+
+
+
+
+
+
+
+<!--Java Script-->
+<script>
+var navlinks =document.getElementById("navlinks");
+
+function showMenu(){
+navlinks.style.right = "0";
+
+}
+function hideMenu(){
+navlinks.style.right = "-200px";
+
+}
+
+
+</script>
+
+ </body>
+ </html>      

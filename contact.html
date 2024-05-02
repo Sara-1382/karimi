@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--google font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+  <!-- font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <title>Contact</title>
+   <!--CSS styles-->
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+  <style>
+    
+    
+    .content-img{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(0,0,0,0), rgba(4,9,30,0.7)), url("./images/qw.jpg");
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+</style>
+
+</head>
+<body>
+     <section class="content-img">
+          <header class="header">
+           <nav>
+                <a href="project3.html"> <img src="./images/li.png"></a>
+    
+               
+                
+                <div class="links" id="navlinks">
+                  <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+                  <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">Courses</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+        
+                </div>
+                
+                <i class="fa fa-bars"  onclick="showMenu()" aria-hidden="true"></i>
+              </nav>
+          </header>
+          <div class="container">
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+              <label for="name">Name:</label>
+              <input style="border-radius: 10px;  margin-bottom: 15px;
+              padding: 10px; border-color: aliceblue;" type="text" id="name" name="name" required>
+              <label for="email">Email:</label>
+              <input style="border-radius: 10px;  margin-bottom: 15px;
+              padding: 10px; border-color: aliceblue;" type="email" id="email" name="email" required>
+              <label for="message">Message:</label>
+              <textarea style="border-radius: 10px;  margin-bottom: 15px;
+              padding: 10px; border-color: aliceblue;" id="message" name="message" required></textarea>
+              <div id="error-message"></div>
+              <button type="submit">Send</button>
+            </form>
+            <div id="success-message"></div>
+          </div>
+
+
+
+        <!--footer-->
+       <section class="footer">
+        <footer style="background-color: #6b94a6;">
+
+          <div class="footer-content">
+            
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="registration.html">Registeration</a></li>
+            </ul>
+            <div class="login">
+              <p style="color: black; text-align: left;">Join Us</p>
+              <div class="icon">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          </div>
+            </div>
+          
+          </div>
+        </footer>
+
+        
+
+       </section>
+
+        <!--Java Script-->
+     <script>
+          var navlinks =document.getElementById("navlinks");
+    
+          function showMenu(){
+            navlinks.style.right = "0";
+    
+          }
+          function hideMenu(){
+            navlinks.style.right = "-200px";
+            
+          }
+    
+          window.onload = handleResponsiveDesign;
+          window.onresize = handleResponsiveDesign;
+          </script>
+
+</body>
+</html>
+
+
+
+
+
+
+

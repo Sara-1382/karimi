@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--google font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+     <!-- font awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+     <title>Registeration</title>
+      <!--CSS styles-->
+     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+
+<style>
+    
+    
+  .content-img{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('./images/ax.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.content-img .header{
+    background-image: url('./images/ax.jpg');
+    position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 15%;
+   padding-bottom: 10px;
+   
+ }
+
+
+
+</style>
+
+<body>
+     <section class="content-img">
+         <header class="header">
+          <nav>
+               <a href=""> <img src="./images/li.png"></a>
+   
+              
+               
+               <div class="links" id="navlinks">
+                 <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+                 <ul>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="about.html">Courses</a></li>
+                  <li><a href="registration.html">Registration</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                 </ul>
+       
+               </div>
+               
+               <i class="fa fa-bars"  onclick="showMenu()" aria-hidden="true"></i>
+             </nav>
+         </header>
+
+         <div class="contentimg">
+          <form class="form">
+               <h1>Registration Form</h1>
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="name" placeholder="Type your name" required >
+     
+               <label for="last-name">Last Name:</label>
+               <input type="text" id="last-name" name="last-name" placeholder="Type your last name" required>
+               
+    
+     
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" placeholder="Type your E-mail address" required>           
+     
+     
+               <label for="password">Password:</label>
+               <input type="password" id="password" name="password"  placeholder="Type a long and hard Password" required>
+     
+               <label for="dob">Date of Birth:</label>
+               <input style="padding: 23px; width: 90%;" type="date" id="dob" name="dob" required>
+     
+              <div class="gender">
+              <label for="gender">Gender:</label>
+              </div>
+              <div class="gendero">
+               <label for="Male">Male</label>
+               <input type="radio" id="male" name="gender" value="Male" required>
+     
+               <label for="Female">Female</label>
+               <input type="radio" id="female" name="gender" value="Female">
+               </div>
+               
+           
+               
+               <input type="Submit"> </button>
+       
+           </form>
+     
+         </div>
+         
+
+          <!--footer-->
+         <section class="footer">
+          <footer style="background-color: #d5d5caac;">
+  
+            <div class="footer-content">
+              
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="registration.html">Registeration</a></li>
+              </ul>
+              <div class="login">
+                <p style="color: black; text-align: left;">Join Us</p>
+                <div class="icon">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </div>
+              </div>
+            
+            </div>
+          </footer>
+  
+          
+  
+         </section>
+        
+
+
+
+         
+         
+
+
+           <!--Java Script-->
+     <script>
+          var navlinks =document.getElementById("navlinks");
+    
+          function showMenu(){
+            navlinks.style.right = "0";
+    
+          }
+          function hideMenu(){
+            navlinks.style.right = "-200px";
+            
+          }
+    
+          window.onload = handleResponsiveDesign;
+          window.onresize = handleResponsiveDesign;
+          </script>
+
+
+
+         
+     
+</body>
+</html>
